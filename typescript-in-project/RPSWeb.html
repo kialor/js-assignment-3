@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS</title>
+    <style>
+        body {background-color: antiquewhite;
+             font-family: 'Poppins', sans-serif;
+             text-align: center;
+        }
+        th {
+            width: 150px;
+        }
+        table {
+            display: flex;
+            justify-content: center;
+        }    
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="mainDiv">
+    <h1>Rock Paper Scissors!</h1>
+    <table>
+        <tr>
+            <th>Player</th>
+            <th>Hand</th>
+            <th>Score</th>
+        </tr>
+        <tr>
+            <td id="playerOneName">Player One</td>
+            <td><span id="playerOnePlay"></span></td>
+            <td><span id="playerOneScore"><span></span></td>
+        </tr>
+        <tr>
+            <td id="playerTwoName">Player Two</td>
+            <td><span id="playerTwoPlay"></span></td>
+            <td><span id="playerTwoScore"></span></td>
+        </tr>
+    </table>
+
+  <br>
+    <button id="playButton">Play Game!</button>
+    <h2>Result</h2>
+    <div id="result"></div>
+</div>
+
+<script src="RPSjs.js"></script>
+</body>
+</html>
